@@ -1,8 +1,10 @@
 import Home from "./pages/Home"
 import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
 import About from "./pages/About"
-import Counter from "./pages/Counter"
-import Info from "./hook/info";
+// import Counter from "./pages/Counter"
+import Info from "./hook/info"
+import UserList from "./pages/UserList"
+import Counter from "./hook/Count"
 
 function App() {
     return (
@@ -17,11 +19,11 @@ function App() {
             {/*        <Route path="/counter" element={<Counter />} />*/}
             {/*    </Routes>*/}
             {/*</BrowserRouter>*/}
+            <Counter />
 
-            <Info />
+            <UserList />
         </div>
     )
 }
-
 
 export default App
