@@ -1,11 +1,23 @@
 import React from "react";
+import Avatar from "./Avatar";
+import UserInfoName from "./UserInfo-name";
 
-function Comment(props) {
+const Comment = (props) => {
     return (
-        <div>
-            <h1>제가 만든 첫 컴포넌트입니다.</h1>
+        <div className="Comment">
+            <div className="UserInfo">
+                <Avatar user={props.author}/>
+                <UserInfoName user={props.author}/>
+
+            </div>
+            <div className="Comment-text">
+                {props.text}
+            </div>
+            <div className="Comment-date">
+                {props.date}
+            </div>
         </div>
     );
 }
 
-export default Comment;
+export default Comment
